@@ -1,7 +1,5 @@
-import "./App.css";
+import { HomePage } from "./pages/HomePage/HomePage";
 
-function App() {
-  return <div></div>;
+export function App() {
+  return <HomePage />;
 }
-
-export default App;
