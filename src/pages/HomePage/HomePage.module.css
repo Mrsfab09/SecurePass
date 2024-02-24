@@ -1,0 +1,20 @@
+body {
+  overflow: hidden;
+  background-color: #121a31;
+}
+.card1 {
+  position: relative;
+  width: 900px;
+  rotate: 30deg;
+  top: 800px;
+  margin-left: -200px;
+  box-shadow: 0 10px 100px #3e68ff;
+}
+.card2 {
+  position: relative;
+  width: 900px;
+  rotate: 30deg;
+  top: -850px;
+  right: -1300px;
+  box-shadow: 0 10px 100px #3e68ff;
+}
