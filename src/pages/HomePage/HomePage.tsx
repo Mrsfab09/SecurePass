@@ -1,50 +1,37 @@
+// import { FaGithub } from "react-icons/fa";
 import styles from "./HomePage.module.css";
-import { IoMdArrowForward } from "react-icons/io";
-import { FaGithub } from "react-icons/fa";
-
 export function HomePage() {
   return (
     <>
-      <div className={styles.card1}>
-        <img src="/blue_card.png" alt="" />
+      <div className={styles.circle}></div>
+      <div className={styles.circle2}></div>
+      <div className={styles.circle3}></div>
+      <div className="relative flex justify-center align-center mt-48">
+        <p className="w-[500px] text-4xl text-slate-200 font-bold text-center md:text-5xl">
+          Lorem ipsum dolor sit amet consectetur
+        </p>
       </div>
-      <div className="flex justify-center align-center">
-        <div className="absolute w-[800px] mt-[-300px] p-12">
-          <p className="text-lg font-light text-slate-500 tracking-[4px]">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga porro
-            aspernatur, at possimus molestias laudantium in voluptatem. Atque,
-            natus voluptatem doloribus minus ex unde cum eum ab iure, voluptate
-            corrupti fugit eligendi! Id, at amet. Nam aut quisquam culpa. Nobis
-            ea animi consectetur ratione dolorem, laudantium laboriosam
-            obcaecati et corporis, reprehenderit ad tempora? Ullam eligendi
-            nulla maxime sapiente, quia vero tenetur veritatis soluta magnam
-            sed. Iste eos eum quo dolores laboriosam dolorum adipisci minima!
-            Soluta rerum, veritatis numquam corrupti dolore aut architecto
-            debitis molestiae mollitia aperiam ex est possimus laudantium
-            sapiente corporis! Architecto blanditiis dolore fugiat qui explicabo
-            dolores quis.
-          </p>
-        </div>
-        <div className="absolute mt-[180px]">
-          <button className="relative bg-blue-700 text-xl font-medium p-4 rounded-2xl flex flex-row gap-1 hover:bg-blue-600">
-            Get started
-            <span className="mt-[5px]">
-              <IoMdArrowForward />
-            </span>
-          </button>
-          <div className="bg-[#3e68ff4d] text-xl font-medium w-45 h-16 rounded-xl mt-[-55px]"></div>
-        </div>
+      <div className="relative flex justify-center align-center mt-12">
+        <p className="w-[500px] text-lg text-slate-400 tracking-widest text-center">
+          Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Sapiente quidem ex quo totam
+          perspiciatis voluptatibus qui deserunt? Commodi hic explicabo at
+          architecto? Doloremque officiis excepturi, molestiae vero, quae
+          consectetur, laudantium minima sint facere neque explicabo veritatis
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+          dolor corporis ullam natus nam qui iure molestias, at vitae amet.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. At ea ab amet
+          officiis labore quasi consequatur placeat ipsam quisquam, neque,
+          magnam illum laboriosam molestiae voluptate dolor? Provident sed
+          aspernatur doloremque!
+        </p>
       </div>
-      <div className={styles.card2}>
-        <img src="/blue_card.png" alt="" />
-      </div>
-      <footer className="relative mt-[-200px] text-center flex justify-center">
-        <button>
-          <a href="https://github.com/Mrsfab09/Password-generator">
-            <FaGithub size={"25px"} color="#d3d3d345" />
-          </a>
+      <div className="relative flex justify-center align-center mb-0 mt-16">
+        <button className="absolute w-32 bg-[#6B37FF] rounded-lg p-3 text-white text-xl font-semibold hover:bg-[#6c37ffb9]">
+          Get started
         </button>
-      </footer>
+        <span className="relative w-32 bg-[#6c37ff5d] rounded-lg p-3 mt-9"></span>
+      </div>
     </>
   );
 }
