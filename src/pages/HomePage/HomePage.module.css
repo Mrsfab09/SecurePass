@@ -3,6 +3,9 @@
   --circle-cyan: rgba(69, 222, 255, 0.49);
   --circle-purple: rgba(112, 62, 255, 0.42);
 }
+body {
+  background-color: #121a31;
+}
 
 .circle {
   width: 50px;

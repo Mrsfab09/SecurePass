@@ -27,7 +27,7 @@ export function HomePage() {
         </p>
       </div>
       <div className="relative flex justify-center align-center mb-0 mt-16">
-        <button className="absolute w-32 bg-[#6B37FF] rounded-lg p-3 text-white text-xl font-semibold hover:bg-[#6c37ffb9]">
+        <button className="absolute w-32 bg-buttonColorStart rounded-lg p-3 text-white text-xl font-semibold hover:bg-buttonColorHoverS">
           Get started
         </button>
         <span className="relative w-32 bg-[#6c37ff5d] rounded-lg p-3 mt-9"></span>
