@@ -1,8 +1,9 @@
-<div align="center">
-  <img width="200" src="src/assets/logo-password-generator2.png">
+<div align=center>
   
-  # Password generator
+  # SecurePass
 </div>
+
+
 
 <div align="center">
   
