@@ -8,7 +8,7 @@ interface SidebarProps {
 export function Sidebar({ onOpen, onClose }: SidebarProps) {
   return (
     <div
-      className={`w-96 h-full bg-[#ffffff9d] fixed top-0 right-[-400px] transition delay-75 duration-300 ease-in-out ${
+      className={`w-96 h-full bg-[#ffffffda]  fixed top-0 right-[-10px] transition duration-300 ease-in-out ${
         onOpen ? "translate-x-0 right-0" : "translate-x-full"
       }`}
     >
@@ -18,11 +18,9 @@ export function Sidebar({ onOpen, onClose }: SidebarProps) {
         </button>
       </div>
       <div className="relative flex align-center justify-center">
-        <ul>
-          <li>Menu Item 1</li>
-          <li>Menu Item 2</li>
-          <li>Menu Item 3</li>
-        </ul>
+        <p>Theme</p>
+        <button className="bg-white border-solid"></button>
+        <button></button>
       </div>
     </div>
   );
