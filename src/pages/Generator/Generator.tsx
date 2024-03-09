@@ -1,4 +1,4 @@
-import { Toaster } from "sonner";
+import { Toaster, toast } from "sonner";
 import { Input } from "../../components/Input/Input";
 import { Shadow } from "../../components/Shadow/Shadow";
 import { MdOutlineSettings } from "react-icons/md";
@@ -12,6 +12,7 @@ export function Generator() {
   const [isNull, setIsNull] = useState(false);
 
   const generatePassword = () => {
+    toast.success("Even though the password");
     setIsNull(true);
   };
   const toggleSidebar = () => {
