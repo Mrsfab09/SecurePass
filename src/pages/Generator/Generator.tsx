@@ -43,6 +43,11 @@ export function Generator() {
         <Sidebar
           onOpen={isSidebarOpen}
           onClose={() => setIsSidebarOpen(false)}
+          onChangeValue1={() => {}}
+          onChangeValue2={() => {}}
+          onChangeValue3={() => {}}
+          onChangeValue4={() => {}}
+          onChangeValue5={() => {}}
         />
         <Footer />
       </div>
