@@ -20,7 +20,6 @@ export function Generator() {
       result += characters.charAt(Math.floor(Math.random() * charactersLength));
     }
     setPassword(result);
-    toast.success("Your password has been generated");
   };
 
   const copyToClipboard = () => {
@@ -50,7 +49,10 @@ export function Generator() {
       <Toaster richColors position="top-center" />
       <div className="flex justify-center align-center mt-48">
         <button
-          onClick={() => generatePassword(8)}
+          onClick={() => {
+            toast.success("Your password has been generated");
+            generatePassword(8);
+          }}
           className="absolute w-32 bg-buttonColorGenerate rounded-lg p-3 text-white text-xl font-semibold z-10 hover:bg-buttonColorHoverG"
         >
           Generate

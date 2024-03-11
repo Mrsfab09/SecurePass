@@ -20,8 +20,8 @@ export function Sidebar({ onOpen, onClose, onChangeLength }: SidebarProps) {
 
   const handleLengthChange = (event: ChangeEvent<HTMLInputElement>) => {
     const value = parseInt(event.target.value);
-    setLength(value);
     onChangeLength(value);
+    setLength(value);
   };
 
   return (
