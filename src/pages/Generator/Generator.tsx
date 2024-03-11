@@ -9,12 +9,36 @@ import styles from "./Generator.module.css";
 
 export function Generator() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-  const [isNull, setIsNull] = useState(false);
+  const [password, setPassword] = useState<string>("");
 
-  const generatePassword = () => {
-    toast.success("Even though the password");
-    setIsNull(true);
+  const generatePassword = (length: number) => {
+    const characters =
+      "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+";
+    let result = "";
+    const charactersLength = characters.length;
+    for (let i = 0; i < length; i++) {
+      result += characters.charAt(Math.floor(Math.random() * charactersLength));
+    }
+    setPassword(result);
+    toast.success("Your password has been generated");
   };
+
+  const copyToClipboard = () => {
+    navigator.clipboard
+      .writeText(password)
+      .then(() => {
+        toast.message("✅ Password copied", {
+          description: "The password has been copied ",
+        });
+      })
+      .catch((error) => {
+        toast.message("❌ Password not copied", {
+          description: "The password was not copied ",
+        });
+        console.log(error);
+      });
+  };
+
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
   };
@@ -22,11 +46,11 @@ export function Generator() {
   return (
     <div className={styles.body}>
       <Shadow />
-      <Input value={isNull ? "Działa" : ""} />
+      <Input value={password} copy={copyToClipboard} />
       <Toaster richColors position="top-center" />
       <div className="flex justify-center align-center mt-48">
         <button
-          onClick={generatePassword}
+          onClick={() => generatePassword(8)}
           className="absolute w-32 bg-buttonColorGenerate rounded-lg p-3 text-white text-xl font-semibold z-10 hover:bg-buttonColorHoverG"
         >
           Generate
@@ -43,11 +67,7 @@ export function Generator() {
         <Sidebar
           onOpen={isSidebarOpen}
           onClose={() => setIsSidebarOpen(false)}
-          onChangeValue1={() => {}}
-          onChangeValue2={() => {}}
-          onChangeValue3={() => {}}
-          onChangeValue4={() => {}}
-          onChangeValue5={() => {}}
+          onChangeLength={generatePassword}
         />
         <Footer />
       </div>
