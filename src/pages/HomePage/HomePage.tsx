@@ -1,6 +1,23 @@
 // import { FaGithub } from "react-icons/fa";
+import { Link, useLocation } from "react-router-dom";
 import styles from "./HomePage.module.css";
+import { useEffect } from "react";
+
 export function HomePage() {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.pathname === "/") {
+      document.body.style.backgroundColor = "#121a31";
+    } else {
+      document.body.style.backgroundColor = "initial";
+    }
+
+    return () => {
+      document.body.style.backgroundColor = "initial";
+    };
+  }, [location.pathname]);
+
   return (
     <>
       <div className={styles.circle}></div>
@@ -21,7 +38,7 @@ export function HomePage() {
       </div>
       <div className="relative flex justify-center align-center mb-0 mt-16">
         <button className="absolute w-32 bg-buttonColorStart rounded-lg p-3 text-white text-xl font-semibold hover:bg-buttonColorHoverS">
-          Get started
+          <Link to={"/generator"}>Get started</Link>
         </button>
         <span className="relative w-32 bg-[#6c37ff5d] rounded-lg p-3 mt-9"></span>
       </div>

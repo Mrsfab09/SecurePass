@@ -10,6 +10,9 @@ export function Footer() {
           </a>
         </div>
         <p className="text-slate-500 italic font-semibold">Made by MrsFab09</p>
+        <p className="text-xs text-slate-500 italic font-semibold text-center">
+          ©Copyright 2024
+        </p>
       </footer>
     </>
   );

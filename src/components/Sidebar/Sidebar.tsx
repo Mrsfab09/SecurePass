@@ -5,18 +5,10 @@ interface SidebarProps {
   onOpen: boolean;
   onClose: () => void;
   onChangeLength: (value: number) => void;
-  // onChangeValue2: (value: string) => void;
-  // onChangeValue3: (value: string) => void;
-  // onChangeValue4: (value: string) => void;
-  // onChangeValue5: (value: string) => void;
 }
 
 export function Sidebar({ onOpen, onClose, onChangeLength }: SidebarProps) {
   const [length, setLength] = useState<number>(8);
-  // const [small, setSmall] = useState("");
-  // const [capital, setCapital] = useState("");
-  // const [special, setSpecial] = useState("");
-  // const [number, setNumber] = useState("");
 
   const handleLengthChange = (event: ChangeEvent<HTMLInputElement>) => {
     const value = parseInt(event.target.value);
@@ -26,8 +18,8 @@ export function Sidebar({ onOpen, onClose, onChangeLength }: SidebarProps) {
 
   return (
     <div
-      className={`w-96 h-full bg-[#ffffffda]  fixed top-0 right-[-10px] transition duration-300 ease-in-out ${
-        onOpen ? "translate-x-0 right-0" : "translate-x-full"
+      className={`w-[450px] md:w-96 h-screen bg-[#ffffffda] z-10 fixed top-0 right-[-10px] transition duration-300 ease-in-out ${
+        onOpen ? "translate-x-0 right-[1200px] md:right-0" : "translate-x-full"
       }`}
     >
       <div className="border-b-2 h-16 flex justify-between align-center">
@@ -65,39 +57,19 @@ export function Sidebar({ onOpen, onClose, onChangeLength }: SidebarProps) {
         </div>
         <div className="flex flex-row gap-20">
           <p className="">small letters</p>
-          <input
-            className="w-20 h-8 rounded bg-slate-300 p-2"
-            type="number"
-            // value={small}
-            // onChange={handleInputChange2}
-          />
+          <input className="w-6 h-4 rounded bg-slate-300 p-2" type="checkbox" />
         </div>
         <div className="flex flex-row gap-16">
           <p>capital letters</p>
-          <input
-            className="w-20 h-8 rounded bg-slate-300 p-2"
-            type="number"
-            // value={capital}
-            // onChange={handleInputChange3}
-          />
+          <input className="w-6 h-4 rounded bg-slate-300 p-2" type="checkbox" />
         </div>
         <div className="flex flex-row gap-20">
           <p className="">special sings</p>
-          <input
-            className="w-20 h-8 rounded bg-slate-300 p-2"
-            type="number"
-            // value={special}
-            // onChange={handleInputChange4}
-          />
+          <input className="w-6 h-4 rounded bg-slate-300 p-2" type="checkbox" />
         </div>
         <div className="flex flex-row gap-28">
           <p>numbers</p>
-          <input
-            className="w-20 h-8 rounded bg-slate-300 p-2"
-            type="number"
-            // value={number}
-            // onChange={handleInputChange5}
-          />
+          <input className="w-6 h-4 rounded bg-slate-300 p-2" type="checkbox" />
         </div>
       </div>
     </div>
