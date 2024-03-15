@@ -30,10 +30,10 @@ export function HomePage() {
       </div>
       <div className="relative flex justify-center align-center mt-12">
         <p className="w-[300px] text-lg text-slate-400 tracking-widest text-center leading-8 md:w-[500px]">
-          To intuicyjna aplikacja do generowania bezpiecznych haseł. Wygeneruj
-          unikalne hasła o dowolnej długości i z różnorodnością znaków, aby
-          zapewnić ochronę Twoim kontom online. Prosta w użyciu, Secure Pass
-          umożliwia szybkie tworzenie i kopiowanie bezpiecznych haseł
+          This is an application for generating secure passwords. Generate
+          unique passwords of any length and with a variety of characters to
+          keep your online accounts protected. Easy to use, Secure Pass allows
+          you to quickly create and copy secure passwords
         </p>
       </div>
       <div className="relative flex justify-center align-center mb-0 mt-16">
