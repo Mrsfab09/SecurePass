@@ -1,5 +1,7 @@
 <div align=center>
   
+ <img src="https://github.com/Mrsfab09/SecurePass/assets/102579957/8a326594-99e8-46a9-ae45-d8f706b8fc25" alt="SecurePass-logo" width="200px">
+
   # SecurePass
 </div>
 
