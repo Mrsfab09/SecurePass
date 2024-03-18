@@ -16,5 +16,5 @@
 </div>
 
 <p>
-  
+  This is an application for generating secure passwords. Generate            unique passwords of any length and with a variety of characters to            keep your online accounts protected. Easy to use, Secure Pass            allows you to quickly create and copy secure passwords
 </p>
