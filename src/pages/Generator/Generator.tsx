@@ -7,6 +7,7 @@ import { Sidebar } from "../../components/Sidebar/Sidebar";
 import { Footer } from "../../components/Footer/Footer";
 import "./Generator.module.css";
 import { ThreeDots } from "react-loader-spinner";
+import { IoMdArrowRoundBack } from "react-icons/io";
 
 export function Generator() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -69,6 +70,11 @@ export function Generator() {
       ) : (
         <>
           <Shadow />
+          <div className="relative ml-40 flex flex-row gap-3">
+            <a href="/">
+              <IoMdArrowRoundBack size={"35px"} color="#5e5e5e" />
+            </a>
+          </div>
           <Input value={password} copy={copyToClipboard} />
           <Toaster richColors position="top-center" />
           <div className="flex justify-center align-center mt-48">

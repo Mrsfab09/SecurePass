@@ -23,7 +23,10 @@ export function HomePage() {
       <div className={styles.circle}></div>
       <div className={styles.circle2}></div>
       <div className={styles.circle3}></div>
-      <div className="relative flex justify-center align-center mt-48">
+      <div className="relative flex justify-center align-center top-10 bottom-0">
+        <img className="w-48" src="./SecurePass-logo.png" alt="logo" />
+      </div>
+      <div className="relative flex justify-center align-center mt-24">
         <p className="w-[500px] text-3xl text-slate-200 font-bold text-center md:text-5xl">
           SecurePass
         </p>
